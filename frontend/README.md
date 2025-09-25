@@ -1,27 +1,49 @@
 # GuessNumber Frontend
 
-This is the frontend for the GuessNumber game, built with Next.js, React, TypeScript, and Tailwind CSS.
+This is the frontend application for the GuessNumber game, built with React, Vite, TypeScript, and Tailwind CSS.
+
+## Project Structure
+
+The project follows a domain-driven architecture to ensure scalability and maintainability.
+
+- `src/app`: Core application setup (routing, providers, entry point).
+- `src/core`: Shared, reusable, non-domain-specific code (UI components, hooks, utils).
+- `src/domain`: Business logic encapsulated by domain. Each domain has its own components, hooks, services, etc.
+- `src/pages`: Page components that are mapped to routes. They orchestrate components from `core` and `domain`.
+- `src/assets`: Static assets like styles and images.
 
 ## Getting Started
 
-First, install the dependencies:
+### Prerequisites
 
-```bash
-npm install
-# or
-yarn install
-```
+- Node.js (v18+)
+- npm or yarn
 
-Then, run the development server:
+### Installation
+
+1. Clone the repository.
+2. Navigate to the `frontend` directory.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Development Server
+
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at `http://localhost:5173`.
 
-Make sure the backend server is running on `http://localhost:3001`.
+### Available Scripts
 
-Navigate to [http://localhost:3000/admin](http://localhost:3000/admin) to configure the game settings.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run lint`: Lints the codebase.
+- `npm run preview`: Serves the production build locally.
+- `npm run test`: Runs tests in watch mode.
+- `npm run test:ui`: Runs tests with the Vitest UI.
+- `npm run coverage`: Generates a test coverage report.

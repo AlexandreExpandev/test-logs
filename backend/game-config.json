@@ -1,8 +1,0 @@
-{
-  "minRange": 1,
-  "maxRange": 100,
-  "customMessageHigher": "Muito alto!",
-  "customMessageLower": "Muito baixo!",
-  "customMessageEqual": "Parabéns, você acertou!",
-  "hintTriggerCount": 5
-}
